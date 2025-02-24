@@ -1,8 +1,29 @@
-const App = () => {
+import React, { useState } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import Navbar from "./components/layout/Navbar";
+import TopBanner from "./components/layout/TopBanner";
+import Tabs from "./components/layout/Tabs";
+
+const App: React.FC = () => {
+    const [activeTab, setActiveTab] = useState(0);
+    const tabs = ["Refer", "Benefits", "FAQs", "Support"];
+
     return (
-        <div className="h-screen flex justify-center items-center bg-gray-900">
-            <h1 className="text-3xl font-bold text-red-300 underline">Hello World</h1>
-        </div>
+        <Router>
+            <TopBanner />
+            <Navbar />
+
+            <div className="container mx-auto flex justify-center items-center flex-col px-4 py-8">
+                <div className="mb-8 w-[797px] relative">
+                    <Tabs
+                        tabs={tabs}
+                        activeTab={activeTab}
+                        onTabChange={setActiveTab}
+                    />
+                </div>
+
+            </div>
+        </Router>
     );
 };
 
