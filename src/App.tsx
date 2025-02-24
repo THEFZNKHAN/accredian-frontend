@@ -3,6 +3,8 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
 import TopBanner from "./components/layout/TopBanner";
 import Tabs from "./components/layout/Tabs";
+import HeroSection from "./components/sections/HeroSection";
+import Refer from "./components/sections/Refer";
 
 const App: React.FC = () => {
     const [activeTab, setActiveTab] = useState(0);
@@ -22,6 +24,8 @@ const App: React.FC = () => {
                     />
                 </div>
 
+                <HeroSection />
+                <Refer />
             </div>
         </Router>
     );

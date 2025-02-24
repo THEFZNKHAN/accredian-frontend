@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
                         onClick={toggleDropdown}
                     />
                     {dropdownOpen && (
-                        <div className="absolute mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg">
+                        <div className="absolute mt-2 w-48 bg-white border z-10 border-gray-200 rounded-md shadow-lg">
                             <a
                                 href="/courses/course1"
                                 className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
