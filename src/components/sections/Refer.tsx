@@ -5,7 +5,7 @@ import { GiWallet } from "react-icons/gi";
 
 const Refer: React.FC = () => {
     return (
-        <div
+        <section
             id="refer"
             className="w-screen h-[785px] flex flex-col justify-between items-center m-0 relative overflow-hidden bg-blue-100 py-8 px-8 mt-20"
         >
@@ -45,7 +45,7 @@ const Refer: React.FC = () => {
                     Refer Now
                 </button>
             </div>
-        </div>
+        </section>
     );
 };
 
