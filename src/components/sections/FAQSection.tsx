@@ -1,9 +1,7 @@
-// src/components/sections/FAQSection.tsx
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ChevronUp, ChevronDown, Headphones } from "lucide-react";
 
-// Define FAQ type
 type FAQ = {
     id: number;
     question: string;
@@ -11,7 +9,6 @@ type FAQ = {
     category: string;
 };
 
-// Sample FAQ data
 const faqData: FAQ[] = [
     {
         id: 1,
@@ -52,7 +49,6 @@ const FAQSection = () => {
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-                    {/* Categories sidebar */}
                     <div className="space-y-4">
                         {categories.map((category) => (
                             <button
@@ -69,7 +65,6 @@ const FAQSection = () => {
                         ))}
                     </div>
 
-                    {/* FAQ content */}
                     <div className="md:col-span-3 space-y-4">
                         {filteredFAQs.map((faq) => (
                             <div
@@ -104,7 +99,6 @@ const FAQSection = () => {
                     </div>
                 </div>
 
-                {/* Contact card */}
                 <div className="mt-16 bg-primary-500 rounded-lg p-8 text-white">
                     <div className="flex flex-col md:flex-row items-center justify-between">
                         <div className="flex items-center mb-6 md:mb-0">

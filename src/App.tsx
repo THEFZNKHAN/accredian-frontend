@@ -5,6 +5,9 @@ import TopBanner from "./components/layout/TopBanner";
 import Tabs from "./components/layout/Tabs";
 import HeroSection from "./components/sections/HeroSection";
 import Refer from "./components/sections/Refer";
+import BenefitsTable from "./components/sections/BenefitsTable";
+import FAQSection from "./components/sections/FAQSection";
+import Footer from "./components/layout/Footer";
 
 const App: React.FC = () => {
     const [activeTab, setActiveTab] = useState(0);
@@ -26,6 +29,9 @@ const App: React.FC = () => {
 
                 <HeroSection />
                 <Refer />
+                <BenefitsTable />
+                <FAQSection />
+                <Footer />
             </div>
         </Router>
     );
